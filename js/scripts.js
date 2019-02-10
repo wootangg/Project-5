@@ -48,7 +48,7 @@ xhr.onreadystatechange = function() {
                 
             }
 
-            modelCard(myObj);
+            modalCard(myObj);
 
 
         } else {
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function(e) {
 
 
 //add modal card
-function modelCard(obj) {
+function modalCard(obj) {
     var cards = document.querySelectorAll('.card');
 
     var myObj = obj;
