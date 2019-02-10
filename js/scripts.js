@@ -44,6 +44,7 @@ xhr.onreadystatechange = function() {
                     cardInfo.appendChild(cardEmail);
                     cardInfo.appendChild(cardLocation);
 
+                //add to cards to gallery div
                 document.getElementById('gallery').appendChild(card).appendChild(cardInfo);
                 
             }
