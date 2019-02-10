@@ -113,6 +113,7 @@ function modalCard(obj) {
                 btnClose.setAttribute('id', 'modal-close-btn');
                 btnClose.setAttribute('class', 'modal-close-btn');
                 btnClose.innerHTML = '<strong>X</strong>';
+                //add click event to close modal
                 btnClose.addEventListener('click', function(){
                     document.querySelector('body').removeChild(modalContainer);
                 });
@@ -149,6 +150,7 @@ function modalCard(obj) {
 
             var modalInfoBday = document.createElement('p');
                 modalInfoBday.setAttribute('class', 'modal-text');
+                //change birth date format
             var birthday = myObj.results[i].dob.date.slice(0, 10).split('-');
             var bYear = birthday.shift();
                 birthday.push(bYear);
